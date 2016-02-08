@@ -4,12 +4,17 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Andrew Crozier is a computational modeller and researcher, currently based at
+the [Medical University of Graz][MUG], Austria. Having completed a PhD at the
+Department of Biomedical Engineering at [King's College London][KCL], UK,
+Andrew has continued his research into the use of finite element modelling of
+cardiac electromechanics as a research and diagnostic tool in the treatment of
+heart failure.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+* [Curriculum Vitae][CV]
+* [GitHub Profile][GitHub]
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+[MUG]: http://www.medunigraz.at/
+[KCL]: http://www.kcl.ac.uk/
+[CV]: /download/AndrewCrozier-CV.pdf
+[GitHub]: http://github.org/acroz/
