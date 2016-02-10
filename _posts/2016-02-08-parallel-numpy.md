@@ -44,8 +44,8 @@ CPU usage in ``htop``:
 
 {% highlight python %}
 import numpy as np
-a = np.random.rand(1000, 1000)
-b = np.random.rand(1000, 1000)
+a = np.random.rand(10000, 10000)
+b = np.random.rand(10000, 10000)
 np.dot(a, b)
 {% endhighlight %}
 
