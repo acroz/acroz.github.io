@@ -3,12 +3,16 @@ layout: post
 title:  "Building ATLAS"
 date:   2016-02-04 00:50:00 +0100
 categories: build numerics sysadmin
+summary: Compilation of the Automatically Tuned Linear Algebra Software (ATLAS)
+         can be challenging. Here I walk through some of the steps I took to
+         get it working on my system.
 ---
+
 Today I attempted to build [ATLAS (Automatically Tuned Linear Algebra
-Software)], an optimised linear algebra package which finely tunes itself to
-your system during the build process. While [ATLAS] is available through many
-package managers, these non-optimised builds miss out on much of the benefit of
-using this library.
+Software)][ATLAS], an optimised linear algebra package which finely tunes
+itself to your system during the build process. While [ATLAS] is available
+through many package managers, these non-optimised builds miss out on much of
+the benefit of using this library.
 
 I found building [ATLAS] to be more involved than many other related packages
 like [LAPACK], however with a little perserverance it was achievable.

@@ -3,6 +3,9 @@ layout: post
 title:  "Parallel NumPy with OpenBLAS"
 date:   2016-02-08 22:25:00 +0100
 categories: python numpy parallel arch
+summary: Distributions of NumPy from the package manager often fail to take
+         advantage of the computational power available on a multicore system.
+         Follow these steps to enable parallel computations with OpenBLAS.
 ---
 
 [NumPy] is a fantastic resource for doing numerical computations in Python,
