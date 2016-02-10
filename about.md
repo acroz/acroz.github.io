@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+tags: navbar
 ---
 
 Andrew Crozier is a computational modeller and researcher, currently based at
