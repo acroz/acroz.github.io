@@ -55,12 +55,12 @@ np.dot(a, b)
 ## SciPy
 
 The [SciPy] package, an additional set of scientific tools built around
-NumPy], is compiled in much the same way. First, ensure that Cython is
+[NumPy], is compiled in much the same way. First, ensure that Cython is
 installed and retrieve the [SciPy] sources:
 
 {% highlight bash %}
 sudo pip install Cython
-git git clone git://github.com/scipy/scipy.git
+git clone git://github.com/scipy/scipy.git
 {% endhighlight %}
 
 Then make a config file from the template, uncomment and update the [OpenBLAS]
