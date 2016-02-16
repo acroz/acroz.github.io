@@ -5,7 +5,8 @@ permalink: /about/
 ---
 
 I am Andrew Crozier, a computational modeller and postdoctoral researcher at
-the [Medical University of Graz][MUG], Austria. 
+the [Medical University of Graz][MUG], Austria. acroz is the handle I use
+online, when available.
 
 * [Curriculum Vitae][CV]
 * [LinkedIn]
