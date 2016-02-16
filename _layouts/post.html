@@ -22,6 +22,26 @@ layout: default
   </span>
 </div>
 
+{% if page.series %}
+  This post is part the series &ldquo;{{ page.series.name }}&rdquo;</i>.
+  <h2>Series Contents</h2>
+  <ol>
+  {% for sibling in site.posts %}
+    {% if sibling.series %}
+      {% if sibling.series.name == page.series.name %}
+        <li class="series-item">
+        {% if sibling.id == page.id %}
+          {{ sibling.title }}
+        {% else %}
+          <a href="{{ sibling.url }}">{{ sibling.title }}</a>
+        {% endif %}                            
+        </li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  </ol>
+{% endif %}
+
 <article class="post-content">
   {{ content }}
 </article>
