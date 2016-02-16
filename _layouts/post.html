@@ -22,7 +22,8 @@ layout: default
   {% endif %}
   <ul class="related-posts">
     {% if page.series %}
-      {% for post in site.posts %}
+      {% assign sorted_posts = site.posts | sort: 'date' %}
+      {% for post in sorted_posts %}
         {% if post.series %}
           {% if post.series.name == page.series.name %}
             <li>
