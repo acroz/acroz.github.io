@@ -36,16 +36,15 @@ Originally devised to model and study the mechanisms of the brain,
 computational neural networks have increasingly found utility as a powerful
 machine learning technique. The brain is modelled as a large network of
 neurons, each of which is considered to be a simple computational unit taking
-a number of inputs \\(\\{x\_i\\}\\) and providing a single output (or
-"activation") \\(a\\). The activation is calculated by applying weights
-\\(\\{w\_i\\}\\) and a bias term \\(b\\) and passing to an activation function
-\\(g\\):
+a number of inputs $$\{x_i\}$$ and providing a single output (or "activation")
+$$a$$. The activation is calculated by applying weights $$\{w_i\}$$ and a bias
+term $$b$$ and passing to an activation function $$g$$:
 
-$$ a = g \\left( \\sum\_i w\_i x\_i + b \\right) $$
+$$ a = g \left( \sum_i w_i x_i + b \right) $$
 
 A common choice for \\(g\\) is the sigmoid function:
 
-$$ g(x) = \\sigma(x) = \\frac{1}{1 + e^{-x}} $$
+$$ g(x) = \sigma(x) = \frac{1}{1 + e^{-x}} $$
 
 Neurons are often depicted as below, receiving a number of inputs from the left
 and providing an output to the right:
@@ -69,11 +68,11 @@ multiple neurons in the next layer of the network.
 
 By combining together a network of simple computational networks, it is
 possible to form a network capable of producing a wide range of mathematical
-representations. A set of inputs \\(\\{x\_i\\}\\) can be provided to the input
+representations. A set of inputs $$\{x_i\}$$ can be provided to the input
 layer, processed through the neural network, and a useful output or outputs
-\\(\\{a\_i\\}\\) then generated. This is how real neural networks in the brain
-are thought to work, and the application of the concept to machine learning
-turns out to be a powerful technique.
+$$\{a_i\}$$ then generated. This is how real neural networks in the brain are
+thought to work, and the application of the concept to machine learning turns
+out to be a powerful technique.
 
 ## Further Detail
 
