@@ -112,6 +112,8 @@ activations to outputs. The `NeuralNetworkLayer` performs the propagation for a
 single layer:
 
 {% highlight python %}
+import numpy as np
+
 def sigmoid(z):
     return 1.0 / (1.0 + np.exp(-z))
 
