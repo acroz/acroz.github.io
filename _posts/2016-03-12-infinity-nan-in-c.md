@@ -17,7 +17,7 @@ is undefined for real numbers.
 
 Fortunately, C provides a sensible way of storing and returning the result of
 such operations - it does not simply crash the program. This allows us to
-handle such outcomes senbily in our program. Returned infinite results are
+handle such outcomes sensibly in our program. Returned infinite results are
 called just that, whereas undefined results are called "not a number", or NaN.
 
 ## Storage
