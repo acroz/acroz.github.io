@@ -32,7 +32,7 @@ given by:
 $$ (-1)^s \times c \times 10^q $$
 
 For example, the number 10.3452 would be represented as $$s=0$$, $$c=103452$$,
-$$e=-4$$, giving:
+$$q=-4$$, giving:
 
 $$ (-1)^0 \times 103452 \times 10^{-4} = 10.34524 $$
 
