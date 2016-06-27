@@ -60,6 +60,12 @@
 .highlight .vi { color: #033 } /* Name.Variable.Instance */
 .highlight .il { color: #f60 } /* Literal.Number.Integer.Long */
 
+/* Scale code font size to fit 80 columns */
+.smallcode pre code {
+  font-size: 90%;
+  line-height: 90%;
+}
+
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
