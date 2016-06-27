@@ -3,7 +3,9 @@ layout: post
 title:  "Digit Characterisation with Neural Networks"
 date:   2016-06-23 02:32:00 +0100
 categories: machinelearning neuralnetworks python numpy scipy
-summary: Blurb about digit characterisation with neural networks.
+summary: In previous posts we covered the theory and implementation of neural
+         networks. Now it's time to demonstrate a common application of them -
+         recognition of handwritten digits.
 series:
     name: "Neural Networks"
     index: 4
