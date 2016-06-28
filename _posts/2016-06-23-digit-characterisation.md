@@ -117,7 +117,8 @@ crsval_features = crsval_images.reshape(10000, 784).T
 These feature and label arrays can be used to train the neural network:
 
 {% highlight python %}
-network.train(train_features, train_labels, lmbda=5., maxiter=200)
+network.train(train_features, train_labels, lmbda=5.,
+              maxiter=200)
 {% endhighlight %}
 
 and then make predictions with the ``predict`` method:
@@ -137,7 +138,8 @@ validation datasets, run it as follows:
 {% highlight python %}
 conv = network.train(train_features, train_labels, lmbda=5.,
                      maxiter=200,
-                     retaccur=(crsval_features, crsval_labels))
+                     retaccur=(crsval_features,
+                               crsval_labels))
 {% endhighlight %}
 
 We can then plot the history of the accuracy of the iterations of the training
