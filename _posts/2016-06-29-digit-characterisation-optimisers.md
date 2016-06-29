@@ -69,7 +69,8 @@ optimiser = gradient_descent(alpha)
 Then pass it as the ``optimiser`` optional argument to ``train``:
 
 {% highlight python %}
-network.train(train_features, train_labels, optimiser=optimiser)
+network.train(train_features, train_labels,
+              optimiser=optimiser)
 {% endhighlight %}
 
 I performed optimisation with gradient descent with a regularisation parameter
