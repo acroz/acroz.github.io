@@ -18,12 +18,12 @@ look into a method for fitting such a network to a set of training data.
 
 ## Cost Function
 
-The direct outputs from a neural network are, as discussed in [previous posts
-](#series-posts), the activations of the output layer. Each entry of the output
-activations corresponds to a specific classification predicted by the network,
-with values ranging from 0 to 1. The closer these activations are to 1, the
-more likely the network thinks that classification is for the network inputs
-provided.
+The direct outputs from a neural network are, as discussed in
+[previous posts](#series-posts), the activations of the output layer. Each entry
+of the output activations corresponds to a specific classification predicted by
+the network, with values ranging from 0 to 1. The closer these activations are
+to 1, the more likely the network thinks that classification is for the network
+inputs provided.
 
 In the 'ideal' case, the output activations for a network with 4 outputs and
 for input data corresponding to a class of 3 would be:
