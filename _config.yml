@@ -14,6 +14,7 @@ description: > # this means to ignore newlines until "baseurl:"
 url:         http://acroz.github.io
 baseurl:     /
 date_format: "%-d %B, %Y"
+exclude: ['README.md']
 
 gems:     [jekyll-paginate]
 paginate: 8
