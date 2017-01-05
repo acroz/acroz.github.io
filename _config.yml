@@ -8,9 +8,8 @@ permalink: /:year/:month/:day/:title/
 # Setup
 title:   acroz
 tagline: 'Andrew Crozier'
-description: > # this means to ignore newlines until "baseurl:"
-  Blog of Andrew Crozier, a postdoctoral researcher and
-  computational modeller.
+description: > # this means to ignore newlines until "url:"
+  Blog of Andrew Crozier, a data engineer based in London.
 url:         http://acroz.github.io
 baseurl:     /
 date_format: "%-d %B, %Y"
