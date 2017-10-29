@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="178.98618mm"
+   height="62.27002mm"
+   viewBox="0 0 634.20298 220.6418"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="client_server_web.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="206.59967"
+     inkscape:cy="26.820935"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="856"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     fit-margin-top="1"
+     fit-margin-right="1"
+     fit-margin-left="1"
+     fit-margin-bottom="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-45.959252,-95.366238)">
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.57460189px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3336"
+       width="191.77028"
+       height="211.98059"
+       x="50.28986"
+       y="99.696846" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:83.22654724px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="145.15689"
+       y="221.16748"
+       id="text3338"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="145.15689"
+         y="221.16748"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:47.26819611px;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova';text-align:center;text-anchor:middle"
+         id="tspan3358">Browser</tspan></text>
+    <rect
+       y="99.696846"
+       x="484.06134"
+       height="211.98059"
+       width="191.77028"
+       id="rect3342"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.57460189px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text3344"
+       y="197.53337"
+       x="579.49927"
+       style="font-style:normal;font-weight:normal;font-size:83.22654724px;line-height:100%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:47.26819611px;line-height:100%;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova';text-align:center;text-anchor:middle"
+         y="197.53337"
+         x="579.49927"
+         id="tspan3346"
+         sodipodi:role="line">Web</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:47.26819611px;line-height:100%;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova';text-align:center;text-anchor:middle"
+         y="244.80157"
+         x="579.49927"
+         sodipodi:role="line"
+         id="tspan3362">Server</tspan></text>
+    <g
+       id="g4154"
+       transform="matrix(2.0806637,0,0,2.0806637,-53.495619,-65.382972)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3348"
+         d="m 142.17897,124.91589 116.16754,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3350"
+         d="m 251.81046,121.53182 6.26313,3.54259"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 258.07359,124.7574 -6.2631,3.5426"
+         id="path4152"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4159"
+       transform="matrix(-2.0806637,0,0,-2.0806637,779.33777,485.11783)">
+      <g
+         id="g4167">
+        <path
+           inkscape:connector-curvature="0"
+           id="path4161"
+           d="m 142.17897,124.91589 116.16754,0"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path4163"
+           d="m 251.81046,121.53182 6.26313,3.54259"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 258.07359,124.7574 -6.2631,3.5426"
+           id="path4165"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4172"
+       y="171.07788"
+       x="294.40256"
+       style="font-style:normal;font-weight:normal;font-size:29.54262161px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.54262161px;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova'"
+         y="171.07788"
+         x="294.40256"
+         sodipodi:role="line"
+         id="tspan4176">GET /page</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:29.54262161px;line-height:100%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="363.07199"
+       y="263.25104"
+       id="text4180"
+       sodipodi:linespacing="100%"><tspan
+         id="tspan4182"
+         sodipodi:role="line"
+         x="363.07199"
+         y="263.25104"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.54262161px;line-height:100%;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova';text-align:center;text-anchor:middle">200 OK</tspan><tspan
+         id="tspan3366"
+         sodipodi:role="line"
+         x="363.07199"
+         y="287.22998"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:100%;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova';text-align:center;text-anchor:middle">&lt;html&gt;Hello!&lt;/html&gt;</tspan></text>
+  </g>
+</svg>
