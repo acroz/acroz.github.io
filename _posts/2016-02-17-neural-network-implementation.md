@@ -39,7 +39,7 @@ individual neurons. Consider once again the example network shown in the [first
 post of this series][post1], now with the layers of the network numbered from 1
 to 3:
 
-<img class="centered" src="{{ site.baseurl }}public/nn/network-highlights.svg" />
+![Simple Network with Highlights]({{ "/public/nn/network-highlights.svg" | relative_url }}){:class="centered"}
 
 The values referring to a particular neuron are now referred to using a
 superscript index $$l$$ to refer to the network layer, and subscript indices
@@ -138,7 +138,7 @@ process the whole network:
 class NeuralNetwork(object):
     ...
     def forward(self, input_activations):
-        
+
         # For compactness
         a = input_activations
 

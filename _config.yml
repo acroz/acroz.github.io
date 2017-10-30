@@ -11,7 +11,7 @@ tagline: 'Andrew Crozier'
 description: > # this means to ignore newlines until "url:"
   Blog of Andrew Crozier, a data engineer based in London.
 url:         http://acroz.github.io
-baseurl:     /
+baseurl:     ""
 date_format: "%-d %B, %Y"
 exclude: ['README.md']
 

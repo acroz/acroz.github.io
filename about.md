@@ -34,7 +34,7 @@ London<br>
 W1T 5BS<br>
 Email: `andrew.c@asidatascience.com`
 
-<img class="centered" src="{{ site.baseurl }}public/andrew.jpg"/>
+<img class="centered" src="{{ "/public/andrew.jpg" | relative_url }}"/>
 
 [ASI]: http://www.asidatascience.com/
 [MUG]: http://www.medunigraz.at/
@@ -43,6 +43,6 @@ Email: `andrew.c@asidatascience.com`
 [CEMRG]: http://cemrg.com/
 [Gernot Plank]: https://forschung.medunigraz.at/fodok/staff?name=GernotPlank
 
-[CV]: {{ site.baseurl }}public/AndrewCrozier-CV.pdf
+[CV]: {{ "/public/AndrewCrozier-CV.pdf" | relative_url }}
 [LinkedIn]: https://www.linkedin.com/in/andrew-crozier-64430831
 [GitHub]: http://github.org/acroz/

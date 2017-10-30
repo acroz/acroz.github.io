@@ -78,7 +78,7 @@ of $$\lambda=1$$ for 50 iterations with learning rates $$\alpha$$ of 0.1, 0.2,
 0.4, 0.6 and 1.0. The graph below shows how the cost function for each learning
 rate converged over time:
 
-<img class="centered" src="{{ site.baseurl }}public/nn/learning-rate.svg"/>
+![Learning Rate]({{ "/public/nn/learning-rate.svg" | relative_url }}){:class="centered"}
 
 Looking at this chart, we see that the largest learning rate of $$\alpha=1.0$$
 resulted in a lot of oscillations and slow convergence. The smallest learning
@@ -89,7 +89,7 @@ here, as it converged quickly without oscillations.
 ## Comparison with other Optimisers
 
 Using the [SciPy optimisation package][spopt] as the framework for our
-optimisation process was not accidental. While it does not supply standard 
+optimisation process was not accidental. While it does not supply standard
 gradient descent as an optimiser, it does provide a number of other, more
 advanced optimisers that could be used in training our neural network.
 
@@ -102,7 +102,7 @@ a regularisation parameter of $$\lambda=1$$. The graph below shows the evolution
 of the cost using each of these methods and with gradient descent with the
 optimal learning rate discovered above.
 
-<img class="centered" src="{{ site.baseurl }}public/nn/compare-optimisers.svg"/>
+![Comparison of Optimisers]({{ "/public/nn/compare-optimisers.svg" | relative_url }}){:class="centered"}
 
 Here we can see that the Conjugate Gradient method results in significantly
 better convergence than either the gradient descent or Newton-CG methods.

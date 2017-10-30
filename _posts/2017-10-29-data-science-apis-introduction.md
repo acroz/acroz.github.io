@@ -56,7 +56,7 @@ you type, say, `http://example.com/page` in your browser's address bar, it
 first works out the address of the server corresponding to `example.com`, then
 sends a request to `GET` the resource `/page` from that server:
 
-![Client Server Model: Web]({{ "/public/data-science-apis/client_server_web.svg" | absolute_url }}){:class="centered"}{:style="max-height: 150px;"}
+![Client Server Model: Web]({{ "/public/data-science-apis/client_server_web.svg" | relative_url }}){:class="centered"}{:style="max-height: 150px;"}
 
 The web server then returns some HTML to the browser in response to this
 request (in this case simply the text 'Hello!'), which the browser renders and
@@ -68,14 +68,14 @@ codes can indicated various error conditions. You're probably familiar with one
 of them, '404 NOT FOUND', which indicates that a requested resource does not
 exist:
 
-![Client Server Model: 404]({{ "/public/data-science-apis/client_server_web_404.svg" | absolute_url }}){:class="centered"}{:style="max-height: 150px;"}
+![Client Server Model: 404]({{ "/public/data-science-apis/client_server_web_404.svg" | relative_url }}){:class="centered"}{:style="max-height: 150px;"}
 
 As well as different response codes, other HTTP methods than GET are available.
 The one you are most likely to encounter in practical applications (and this
 blog post series) is POST, which is generally used to create a resource on the
 server:
 
-![Client Server Model: POST]({{ "/public/data-science-apis/client_server_web_post.svg" | absolute_url }}){:class="centered"}{:style="max-height: 150px;"}
+![Client Server Model: POST]({{ "/public/data-science-apis/client_server_web_post.svg" | relative_url }}){:class="centered"}{:style="max-height: 150px;"}
 
 Web servers hosting HTML content are great, but what does this mean for data
 science APIs? Well, if we replace the browser in this scenario with some client
@@ -83,7 +83,7 @@ application which wants to interface with our machine learning model, and write
 a web server that returns parsable structured data in response to web requests,
 we can use HTTP as the mechanism to exchange data:
 
-![Client Server Model: API]({{ "/public/data-science-apis/client_server_api.svg" | absolute_url }}){:class="centered"}{:style="max-height: 150px;"}
+![Client Server Model: API]({{ "/public/data-science-apis/client_server_api.svg" | relative_url }}){:class="centered"}{:style="max-height: 150px;"}
 
 Provided the client application knows how the response body is formatted, it is
 able to make a call to the server any time it needs to make a prediction, and

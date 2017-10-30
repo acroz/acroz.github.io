@@ -49,13 +49,13 @@ $$ g(x) = \sigma(x) = \frac{1}{1 + e^{-x}} $$
 Neurons are often depicted as below, receiving a number of inputs from the left
 and providing an output to the right:
 
-<img class="centered" src="{{ site.baseurl }}public/nn/single-neuron.svg" />
+![Single Neuron]({{ "/public/nn/single-neuron.svg" | relative_url }}){:class="centered"}
 
 A more complex model can then be constructed by assembling a network of such
 neurons, where multiple layers of neurons have their inputs and outputs
 connected together:
 
-<img class="centered" src="{{ site.baseurl }}public/nn/simple-network.svg" />
+![Simple Network]({{ "/public/nn/simple-network.svg" | relative_url }}){:class="centered"}
 
 More complex structures with reentrant positive feedback loops are also
 possible and may offer additional power, however here we concentrate on the

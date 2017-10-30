@@ -48,7 +48,7 @@ python mnist.py --download --plot --labels
 
 This will look something like:
 
-<img class="centered" src="{{ site.baseurl }}public/nn/mnist-digits.svg" />
+![MNIST Digits]({{ "/public/nn/mnist-digits.svg" | relative_url }}){:class="centered"}
 
 While the [MNIST] data set comes with 60,000 training images and 10,000 test
 images, we will reserve 10,000 images from the training set for
@@ -161,7 +161,7 @@ pyplot.legend(loc='lower right')
 
 Yielding the following:
 
-<img class="centered" src="{{ site.baseurl }}public/nn/accuracy-evolution.svg"/>
+![Accuracy Evolution]({{ "/public/nn/accuracy-evolution.svg" | relative_url }}){:class="centered"}
 
 Here we can see that the training algorithm starts with an accuracy of around
 0.1, or 10%, which is what you would expect for getting the answer right by

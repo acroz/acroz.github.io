@@ -122,7 +122,7 @@ setting the ``OMP_NUM_THREADS`` environment variable. On my 12 core workstation,
 I timed excution of the training algorithm from 1 up to 10 cores, and plotted
 the execution times in the chart below:
 
-<img class="centered" src="{{ site.baseurl }}public/nn/parallel-scaling.svg" />
+![Parallel Scaling]({{ "/public/nn/parallel-scaling.svg" | relative_url }}){:class="centered"}
 
 Here we can see that there is an excellent speedup up to around 4 cores, which
 runs about 3 times faster than on a single core. Adding more cores after that
