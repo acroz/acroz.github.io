@@ -197,6 +197,56 @@ equivalent Python representation:
 {'name': 'Andrew', 'username': 'acroz'}
 ```
 
+### Jsonifying NumPy Values
+
+It's worth noting that Python's standard library `json` package, which is used
+internally by `flask.jsonify()`, doesn't play nicely with NumPy types. For
+example, while the serialisation of a normal Python `int` works fine:
+
+```python
+>>> import json
+>>> json.dumps(3)
+'3'
+```
+
+Doing the same with a `numpy.int64` does not:
+
+```python
+>>> import numpy
+>>> json.dumps(numpy.int64(3))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/acroz/.pyenv/versions/3.6.2/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/Users/acroz/.pyenv/versions/3.6.2/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/acroz/.pyenv/versions/3.6.2/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/acroz/.pyenv/versions/3.6.2/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'int64' is not JSON serializable
+```
+
+For that reason, you'll want to make sure any content you're serialising with
+`flask.jsonify()` is converted to native Python types. In the above example:
+
+```python
+>>> numpy_integer = numpy.int64(3)
+>>> json.dumps(int(numpy_integer))
+'3'
+```
+
+And for arrays:
+
+```python
+>>> array_1d = numpy.array([1., 1.5, 2.])
+>>> json.dumps([float(v) for v in array_1d])
+'[1.0, 1.5, 2.0]'
+>>> array_2d = numpy.array([[1., 1.5], [1.5, 2.]])
+>>> json.dumps([[float(v) for v in row] for row in array_2d])
+'[[1.0, 1.5], [1.5, 2.0]]'
+```
+
 ## Wrapping a Data Science Model
 
 I've covered some of the basics of wrapping Python functionality in HTTP
@@ -267,14 +317,16 @@ that takes the two features as inputs:
 @app.route('/predict/feature_1/<feature_1>/feature_2/<feature_2>')
 def predict(feature_1, feature_2):
 
-    features = numpy.array(
-        [[feature_1, feature_2]],
-        dtype=float  # Convert inputs to floats
-    )
+    # Convert inputs from strings to floats
+    feature_1 = float(feature_1)
+    feature_2 = float(feature_2)
 
+    # Perform model prediction
+    features = numpy.array([[feature_1, feature_2]])
     predicted_class = model.predict(features)[0]
     probabilities = model.predict_proba(features)[0]
 
+    # Prepare response
     content = {
         'class': int(predicted_class),
         'probabilities': [
