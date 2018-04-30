@@ -1,21 +1,23 @@
 # Dependencies
-markdown:    kramdown
+markdown: kramdown
 highlighter: rouge
 
 # Permalinks
 permalink: /:year/:month/:day/:title/
 
 # Setup
-title:   acroz
+title: acroz
 tagline: 'Andrew Crozier'
-description: > # this means to ignore newlines until "url:"
+description: >
   Blog of Andrew Crozier, a data engineer based in London.
-url:         http://acroz.github.io
-baseurl:     ""
+url: http://acroz.github.io
+baseurl: ""
 date_format: "%-d %B, %Y"
-exclude: ['README.md']
+exclude:
+  - README.md
 
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
 paginate: 8
 
 github: https://github.com/acroz/
