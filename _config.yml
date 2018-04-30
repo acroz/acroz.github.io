@@ -15,7 +15,7 @@ baseurl:     ""
 date_format: "%-d %B, %Y"
 exclude: ['README.md']
 
-gems:     [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 8
 
 github: https://github.com/acroz/
