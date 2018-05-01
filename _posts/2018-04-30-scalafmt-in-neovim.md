@@ -21,7 +21,8 @@ translate to use the appropriate package manager and init system.
 Install nailgun and coursier with [Homebrew][Homebrew]:
 
 ```sh
-brew install nailgun coursier
+brew install nailgun
+brew install --HEAD coursier/formulas/coursier
 ```
 
 ## 2. Install scalafmt with coursier
