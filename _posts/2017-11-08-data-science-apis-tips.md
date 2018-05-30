@@ -64,20 +64,19 @@ first make a function that creates a flask `Response` for a given Python
 exception:
 
 ```python
-from werkzeug.exceptions import HTTPException
+from werkzeug.exceptions import HTTPException, InternalServerError
 
 def json_errorhandler(exception):
     """Create a JSON-encoded flask Response from an Exception."""
 
-    if isinstance(exception, HTTPException):
-        message = exception.description
-        code = response.status_code
-    else:
-        message = 'Internal server error'
-        code = 500
+    if not isinstance(exception, HTTPException):
+        exception = InternalServerError()
 
-    response = jsonify({'message': message, 'error': True})
-    response.status_code = code
+    response = jsonify({
+        'error': exception.name,
+        'description': exception.description
+    })
+    response.status_code = exception.code
 
     return response
 ```
@@ -85,8 +84,8 @@ def json_errorhandler(exception):
 Note that the `HTTPException` class from `werkzeug` is the exception type used
 by [Flask] to represent HTTP failure cases, like 404 above. Any other Python
 exception being passed here indicates that an exception was raised while
-handling a request, and we therefore return a 500 status response, indicating
-an 'Internal Server Error'.
+handling a request, and we therefore convert to an `InternalServerError`, which
+returns the corresponding 500 status response.
 
 It's then a simple matter to register the function as the error handler:
 
@@ -103,8 +102,8 @@ descriptive error message:
 
 ```json
 {
-  "error": true,
-  "message": "The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again."
+  "error": "Internal Server Error",
+  "description": "The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again."
 }
 ```
 
@@ -116,7 +115,7 @@ This can now be read reliably by [requests]:
 >>> response.status_code
 404
 >>> response.json()
-{'error': True, 'message': 'The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.'}
+{'error': 'Internal Server Error', 'description': 'The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.'}
 ```
 
 ## Malformed Inputs
