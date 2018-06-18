@@ -116,6 +116,7 @@ def slow_multiply(task_id, x, y):
 `views.py`, implements the endpoints on the Flask app:
 
 ```python
+from flask import request, jsonify
 import uuid
 from core import app, db, queue
 from tasks import slow_multiply
