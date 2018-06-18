@@ -164,6 +164,15 @@ with app.app_context():
         w.work()
 ```
 
+<div class="note">
+  <h5><i class="fas fa-exclamation"></i>&ensp;Note</h5>
+  <p>
+  If you're not using Flask-SQLAlchemy in your project, you won't need to use
+  the above snippet to implement your own worker. Just run
+  <code>rq worker</code> to run a worker process.
+  </p>
+</div>
+
 ### Example Client Code
 
 To submit a multiplication task to be executed by the workers, submit a POST to
