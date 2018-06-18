@@ -129,7 +129,7 @@ def submit_multiplication():
         slow_multiply,
         task_id, body['x'], body['y']
     )
-    return jsonify({'task_id': str(id)}), 202
+    return jsonify({'task_id': str(task_id)}), 202
 
 @app.route('/multiply/<task_id>', methods=['GET'])
 def get_multiplication(task_id):
