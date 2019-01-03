@@ -118,7 +118,7 @@ You can easily choose the right endpoint by including it in the URL:
 ```bash
 $ curl localhost:5000
 Hello World!
-$ curl localhost:5000
+$ curl localhost:5000/foo
 bar
 ```
 
