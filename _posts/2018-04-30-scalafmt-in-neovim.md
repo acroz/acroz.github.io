@@ -11,24 +11,37 @@ backend services in [Scala][Scala]. To save on time spent discussing code
 style, we're trying out autoformatting of our code with [scalafmt][scalafmt],
 with a configuration that reasonably closely reflects our current style.
 
-Below are the steps I took to configure [Neovim][Neovim], the main editor I
-use, to automatically format Scala code with scalafmt on save. These
-instructions are written for use on Mac OS - on other systems you'll need to
-translate to use the appropriate package manager and init system.
+scalafmt is [relatively easy to set up in IntelliJ][scalafmt in IntelliJ], a
+popular IDE for Java and Scala, however I and many on our development team use
+[Neovim][Neovim] as our primary code editor. This article details the steps we
+took to get Neovim to apply scalafmt to Scala source code automatically on
+save.
 
-## 1. Install nailgun and coursier
+These instructions are written for use on Mac OS – on other systems you’ll need
+to translate to use the appropriate package manager and init system.
 
-Install nailgun and coursier with [Homebrew][Homebrew]:
+## 1. Install nailgun
+
+As responsiveness is important when running scalafmt from an editor, it’s
+recommended to run scalafmt through nailgun. Nailgun keeps scalafmt running on
+a local server to avoid paying a penalty to start up the JVM on each run.
+
+To install nailgun with [Homebrew][Homebrew]:
 
 ```sh
 brew install nailgun
-brew install --HEAD coursier/formulas/coursier
 ```
 
 ## 2. Install scalafmt with coursier
 
-With coursier, you can now install scalafmt and create an executable running
-the scalafmt service in nailgun:
+If you don’t already have coursier, install it with Homebrew:
+
+```sh
+brew install --HEAD coursier/formulas/coursier
+```
+
+With coursier, install scalafmt and create an executable running the scalafmt
+service in nailgun:
 
 ```sh
 coursier bootstrap \
@@ -60,11 +73,11 @@ and in a separate shell run
 ng scalafmt --version
 ```
 
-## 3. Set up scalafmt server
+## 3. Create scalafmt service
 
-We don't want to have to manually run the scalafmt server, so to have Mac OS
-run it as a service, create the following file in
-`~/Library/LaunchAgents/nailgun.scalafmt.plist`:
+We don’t want to have to manually run the scalafmt server every time we start
+the computer, so to have Mac OS run it as a service, create the following file
+in `~/Library/LaunchAgents/nailgun.scalafmt.plist`:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -91,6 +104,9 @@ launchctl load -w ~/Library/LaunchAgents/nailgun.scalafmt.plist
 
 ## 4. Configure Neovim
 
+Finally, we want to configure Neovim to automatically apply scalafmt formatting
+to our Scala source files.
+
 Install neoformat with your favourite plugin manager. For example, with
 [vim-plug], add to `~/.config/nvim/init.vim`:
 
@@ -111,7 +127,8 @@ let g:neoformat_scala_scalafmt = {
         \ }
 ```
 
-and optionally configure it to autoformat on save by adding:
+Finally, to configure Neovim to automatically apply formatting to Scala files
+on save, add the following line to `~/.config/nvim/init.vim`:
 
 ```vim
 autocmd BufWritePre *.{scala,sbt} Neoformat
@@ -121,7 +138,8 @@ autocmd BufWritePre *.{scala,sbt} Neoformat
 [SherlockML]: https://sherlockml.com/
 [Scala]: https://www.scala-lang.org/
 [scalafmt]: http://scalameta.org/scalafmt/
+[scalafmt in IntelliJ]: https://scalameta.org/scalafmt/docs/installation.html#intellij
 [Neovim]: https://neovim.io/
 [Homebrew]: https://brew.sh/
-[scalafmt-nailgun]: http://scalameta.org/scalafmt/#Nailgun
+[scalafmt-nailgun]: https://scalameta.org/scalafmt/docs/installation.html#nailgun
 [vim-plug]: https://github.com/junegunn/vim-plug
