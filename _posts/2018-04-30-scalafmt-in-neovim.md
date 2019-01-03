@@ -38,6 +38,12 @@ coursier bootstrap \
   -f --main com.martiansoftware.nailgun.NGServer
 ```
 
+Create an alias to run the scalafmt CLI through nailgun with:
+
+```sh
+ng ng-alias scalafmt org.scalafmt.cli.Cli
+```
+
 > **Note:** The above command installs the latest version of scalafmt at the
 > time of writing. See [the scalafmt docs][scalafmt-nailgun] for a command to
 > install the most up to date version.
@@ -51,7 +57,7 @@ scalafmt_ng
 and in a separate shell run
 
 ```sh
-ng org.scalafmt.cli.Cli --version
+ng scalafmt --version
 ```
 
 ## 3. Set up scalafmt server
@@ -100,7 +106,7 @@ with:
 ```vim
 let g:neoformat_scala_scalafmt = {
         \ 'exe': 'ng',
-        \ 'args': ['org.scalafmt.cli.Cli', '--stdin'],
+        \ 'args': ['scalafmt', '--stdin'],
         \ 'stdin': 1,
         \ }
 ```
