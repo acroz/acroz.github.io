@@ -5,17 +5,16 @@ date:   2018-04-30 23:20:00 +0100
 categories: scala formatting vim neovim
 ---
 
-At [ASI Data Science][ASI], where I work as an engineer developing
-[SherlockML][SherlockML], our data science platform, we write most of our
-backend services in [Scala][Scala]. To save on time spent discussing code
-style, we're trying out autoformatting of our code with [scalafmt][scalafmt],
-with a configuration that reasonably closely reflects our current style.
+At [Faculty], where I work as an engineer developing [our data science
+platform][Faculty platform], we write most of our backend services in [Scala].
+To save on time spent discussing code style, we're trying out autoformatting of
+our code with [scalafmt], with a configuration that reasonably closely reflects
+our current style.
 
 scalafmt is [relatively easy to set up in IntelliJ][scalafmt in IntelliJ], a
 popular IDE for Java and Scala, however I and many on our development team use
-[Neovim][Neovim] as our primary code editor. This article details the steps we
-took to get Neovim to apply scalafmt to Scala source code automatically on
-save.
+[Neovim] as our primary code editor. This article details the steps we took to
+get Neovim to apply scalafmt to Scala source code automatically on save.
 
 These instructions are written for use on Mac OS – on other systems you’ll need
 to translate to use the appropriate package manager and init system.
@@ -26,7 +25,7 @@ As responsiveness is important when running scalafmt from an editor, it’s
 recommended to run scalafmt through nailgun. Nailgun keeps scalafmt running on
 a local server to avoid paying a penalty to start up the JVM on each run.
 
-To install nailgun with [Homebrew][Homebrew]:
+To install nailgun with [Homebrew]:
 
 ```sh
 brew install nailgun
@@ -134,8 +133,8 @@ on save, add the following line to `~/.config/nvim/init.vim`:
 autocmd BufWritePre *.{scala,sbt} Neoformat
 ```
 
-[ASI]: https://asidatascience.com/
-[SherlockML]: https://sherlockml.com/
+[Faculty]: https://faculty.ai/
+[Faculty platform]: https://faculty.ai/products-services/platform/
 [Scala]: https://www.scala-lang.org/
 [scalafmt]: http://scalameta.org/scalafmt/
 [scalafmt in IntelliJ]: https://scalameta.org/scalafmt/docs/installation.html#intellij

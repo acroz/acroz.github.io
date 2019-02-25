@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-I am Andrew Crozier, a data engineer at [ASI Data Science][ASI]. acroz is my
-usual online handle.
+I am Andrew Crozier, a data engineer at [Faculty] (previously known as ASI Data
+Science). acroz is my usual online handle.
 
 * [Curriculum Vitae][CV]
 * [LinkedIn]
-* [GitHub][GitHub]
+* [GitHub]
 
 I graduated with a MSci in Applied Maths and Physics from [Queen's University
 Belfast][QUB] in my home city of Belfast, Northern Ireland. With a growing
@@ -36,13 +36,13 @@ Email: `andrew.c@asidatascience.com`
 
 <img class="centered" src="{{ "/public/andrew.jpg" | relative_url }}"/>
 
-[ASI]: http://www.asidatascience.com/
-[MUG]: http://www.medunigraz.at/
-[QUB]: http://www.qub.ac.uk/
-[KCL]: http://www.kcl.ac.uk/
-[CEMRG]: http://cemrg.com/
+[Faculty]: https://faculty.ai/
+[MUG]: https://www.medunigraz.at/
+[QUB]: https://www.qub.ac.uk/
+[KCL]: https://www.kcl.ac.uk/
+[CEMRG]: https://cemrg.com/
 [Gernot Plank]: https://forschung.medunigraz.at/fodok/staff?name=GernotPlank
 
 [CV]: {{ "/public/AndrewCrozier-CV.pdf" | relative_url }}
 [LinkedIn]: https://www.linkedin.com/in/andrew-crozier-64430831
-[GitHub]: http://github.org/acroz/
+[GitHub]: https://github.com/acroz/
