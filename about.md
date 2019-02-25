@@ -28,11 +28,11 @@ have written and made publicly available.
 ## Contact
 
 Andrew Crozier<br>
-ASI<br>
-48 Fitzroy Street<br>
+Faculty<br>
+54 Welbeck Street<br>
 London<br>
-W1T 5BS<br>
-Email: `andrew.c@asidatascience.com`
+W1G 9XS<br>
+Email: `acroz@faculty.ai`
 
 <img class="centered" src="{{ "/public/andrew.jpg" | relative_url }}"/>
 
