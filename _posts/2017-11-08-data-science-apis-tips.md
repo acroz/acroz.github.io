@@ -2,7 +2,7 @@
 layout: post
 title:  "Data Science APIs: Building Robust APIs"
 date:   2017-11-08 23:09:00 +0000
-tags: python api flask
+tags: [Python, APIs, Flask]
 series:
     name: "Data Science APIs"
     index: 3

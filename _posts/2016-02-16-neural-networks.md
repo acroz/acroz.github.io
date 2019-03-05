@@ -2,7 +2,7 @@
 layout: post
 title:  "Neural Networks"
 date:   2016-02-16 18:33:00 +0100
-tags: machinelearning neuralnetworks python numpy scipy
+tags: [Machine Learning, Neural Networks, Python, NumPy, SciPy]
 summary: Choosing a suitable mathematical model for your machine learning
          problem can be challenging. Neural networks provide a
          neurology-inspired method with minimal prior assumptions and great

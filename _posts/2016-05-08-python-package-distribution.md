@@ -2,7 +2,7 @@
 layout: post
 title:  "Python Package Distribution"
 date:   2016-05-08 14:13:00 +0200
-tags: python
+tags: [Python]
 summary: You've written a great Python package and want to share it with the
          world. But how should you go about that? Here we discuss how to
          distribute your project in a way that allows other Python users to use

@@ -2,7 +2,7 @@
 layout: post
 title:  "scalafmt in Neovim"
 date:   2018-04-30 23:20:00 +0100
-tags: scala formatting vim neovim
+tags: [Scala, Code Formatting, Vim, Neovim]
 ---
 
 At [Faculty], where I work as an engineer developing [our data science

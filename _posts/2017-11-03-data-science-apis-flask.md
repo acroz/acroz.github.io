@@ -2,7 +2,7 @@
 layout: post
 title:  "Data Science APIs: Flask"
 date:   2017-11-03 14:38:00 +0000
-tags: python api flask
+tags: [Python, APIs, Flask]
 summary: Flask is a great lightweight web framework for Python that makes it
          really easy to put together an API for a data science model quickly.
          In this post, I cover some of the basics for getting started with
