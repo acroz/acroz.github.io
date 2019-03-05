@@ -2,7 +2,7 @@
 layout: post
 title:  "Neural Network Implementation"
 date:   2016-02-17 12:08:00 +0100
-categories: machinelearning neuralnetworks python numpy scipy
+tags: machinelearning neuralnetworks python numpy scipy
 summary: Neural networks are a powerful technique in machine learning, inspired
          by models of the brain. In this post, we expand on the implementation
          of practical neural networks.

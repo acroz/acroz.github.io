@@ -2,7 +2,7 @@
 layout: post
 title:  "Neural Network Training"
 date:   2016-02-17 20:01:00 +0100
-categories: machinelearning neuralnetworks python numpy scipy
+tags: machinelearning neuralnetworks python numpy scipy
 summary: Neural networks are a powerful technique in machine learning, inspired
          by models of the brain. In this post, I show how to train a network to
          some data.

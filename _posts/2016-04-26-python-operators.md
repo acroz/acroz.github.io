@@ -2,7 +2,7 @@
 layout: post
 title:  "Customising Operators in Python"
 date:   2016-04-24 22:44:00 +0100
-categories: python
+tags: python
 summary: Python classes allow powerful encapsulation and abstraction of code,
          but even more elegant code can be achieved through the application of
          operators to classes.

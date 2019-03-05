@@ -2,7 +2,7 @@
 layout: post
 title:  "Python Namespace Packages"
 date:   2017-01-05 22:25:00 +0000
-categories: python
+tags: python
 summary: Sometimes it's useful to split the components of a Python library
          across multiple respositories, but still access them from the same
          namespace. Namespace packages are a great mechanism for achieving
