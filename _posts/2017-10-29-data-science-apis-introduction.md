@@ -2,7 +2,7 @@
 layout: post
 title:  "Data Science APIs: Introduction"
 date:   2017-10-29 19:26:00 +0000
-categories: python api flask
+tags: [Python, APIs, Flask]
 summary: Machine learning has a lot of fantastic practical applications, but
          there comes a point where you want to package up your model so it can
          be used in practical applications. Web APIs provide a great mechanism

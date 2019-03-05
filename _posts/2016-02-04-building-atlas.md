@@ -2,7 +2,7 @@
 layout: post
 title:  "Building ATLAS"
 date:   2016-02-04 00:50:00 +0100
-categories: build numerics sysadmin
+tags: [System Administration]
 summary: Compilation of the Automatically Tuned Linear Algebra Software (ATLAS)
          can be challenging. Here I walk through some of the steps I took to
          get it working on my system.

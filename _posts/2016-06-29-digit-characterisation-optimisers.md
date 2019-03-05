@@ -2,7 +2,7 @@
 layout: post
 title:  "Digit Characterisation with Neural Networks: Optimisation Algorithms"
 date:   2016-06-29 23:15:00 +0200
-categories: machinelearning neuralnetworks python numpy scipy
+tags: [Machine Learning, Neural Networks, Python, NumPy, SciPy]
 summary: Selecting a good optimisation algorithm and good learning parameters is
          key to efficiently and effectively train our digit characterisation
          neural network. Here we compare several optimisers empirically.

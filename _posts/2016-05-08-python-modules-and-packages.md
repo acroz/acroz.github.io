@@ -2,7 +2,7 @@
 layout: post
 title:  "Python Modules and Packages"
 date:   2016-05-08 01:23:00 +0200
-categories: python
+tags: [Python]
 summary: Getting started with simple scripts in Python is really easy, but
          often we want to create reusable code in a larger project. Here we
          introduce python packages, and how to create them.

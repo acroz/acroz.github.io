@@ -2,7 +2,7 @@
 layout: post
 title:  "Neural Networks: Parallel Optimisation"
 date:   2016-07-04 01:42:00 +0200
-categories: machinelearning neuralnetworks python numpy scipy parallel
+tags: [Machine Learning, Neural Networks, Python, NumPy, SciPy, Parallel Computing]
 summary: Neural network training can be a computationally expensive task,
          especially when dealing with larger datasets. Here I document some
          optimisation of my neural network implementation to take advantage of

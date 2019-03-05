@@ -2,7 +2,7 @@
 layout: post
 title:  "Data Science APIs: Long Running Tasks"
 date:   2018-01-07 15:55:00 +0000
-categories: python api flask
+tags: [Python, APIs, Flask]
 series:
     name: "Data Science APIs"
     index: 4

@@ -2,7 +2,7 @@
 layout: post
 title:  "Infinities and NaN in C"
 date:   2016-03-12 16:59:00 +0100
-categories: c float
+tags: [C]
 summary: Some mathematical operations can result in infinities or have
          undefined results. Fortunately, C can return sensible results in these
          cases through special floating point values representing
