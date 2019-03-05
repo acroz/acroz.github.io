@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+order: 2
 ---
 
 I am Andrew Crozier, a data engineer at [Faculty] (previously known as ASI Data
