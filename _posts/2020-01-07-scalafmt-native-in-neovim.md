@@ -18,7 +18,7 @@ updated guide on using scalafmt in Neovim with scalafmt-native.
 Follow the [scalafmt docs][scalafmt-native] to install scalafmt-native.
 
 ```sh
-VERSION=2.3.3-RC1
+VERSION=2.3.2
 INSTALL_LOCATION=/usr/local/bin/scalafmt-native
 curl https://raw.githubusercontent.com/scalameta/scalafmt/master/bin/install-scalafmt-native.sh | \
   sh -s -- $VERSION $INSTALL_LOCATION
