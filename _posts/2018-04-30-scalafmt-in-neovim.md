@@ -19,6 +19,15 @@ get Neovim to apply scalafmt to Scala source code automatically on save.
 These instructions are written for use on Mac OS – on other systems you’ll need
 to translate to use the appropriate package manager and init system.
 
+<div class="note">
+  <h5><i class="fas fa-exclamation"></i>&ensp;Update</h5>
+  <p>
+  See <a href="{% post_url 2020-01-07-scalafmt-native-in-neovim %}">my updated
+  post</a> on using <code>scalafmt-native</code> for a easier and more robust
+  setup.
+  </p>
+</div>
+
 ## 1. Install nailgun
 
 As responsiveness is important when running scalafmt from an editor, it’s
