@@ -51,37 +51,44 @@ find ~/src -type d -name .git | sed 's/\/\.git$//g'
 
 On my my current source directory, this takes 27 seconds to run!
 
-## New solution: `find-git-repos`
+## New solution: `git-find-repos`
 
 To more efficiently search my local directories, I wrote
-[a simple CLI tool][find-git-repos] that does a recursive search of a
+[a simple CLI tool][git-find-repos] that does a recursive search of a
 directory, printing out git repositories. As it's able to stop traversing down
 a directory tree as soon as it encounters a `.git` directory, it's much faster
 (0.26 seconds instead of 27).
 
-You can check out `find-git-repos` for yourself [on GitHub][find-git-repos].
+You can check out `git-find-repos` for yourself [on GitHub][git-find-repos].
 Installation is easy with `pip` or `pipx`:
 
 ```sh
-pipx install find-git-repos
+pipx install git-find-repos
 ```
 
-By default, `find-git-repos` searches the current directory recursively.
+By default, `git-find-repos` searches the current directory recursively.
 Alternatively, you can specifiy a particular path:
 
 ```sh
-find-git-repos ~/src
+git-find-repos ~/src
+```
+
+You can also use `git-find-repos` as if it were a subcommand of `git` (thanks
+to my colleague Víctor Zabalza [for this suggestion][rename-suggestion]):
+
+```sh
+git find-repos ~/src
 ```
 
 ## Putting it all together
 
-With `find-git-repos`, I'm able to put together my convenience shell function
+With `git-find-repos`, I'm able to put together my convenience shell function
 as desired. In my `.zshrc`, I define the following function:
 
 ```zsh
 function repo {
     initial_query=$1
-    dest=$(find-git-repos ~/src | fzy -q "$initial_query" -l 20) && cd "$HOME/src/$dest"
+    dest=$(git find-repos ~/src | fzy -q "$initial_query" -l 20) && cd "$HOME/src/$dest"
 }
 ```
 
@@ -90,4 +97,5 @@ enough of the name for it to match with `fzy`, then hit enter. If a match is
 found, the `repo` function will change my directory there.
 
 [fzy]: https://github.com/jhawthorn/fzy
-[find-git-repos]: https://github.com/acroz/find-git-repos
+[git-find-repos]: https://github.com/acroz/git-find-repos
+[rename-suggestion]: https://github.com/acroz/git-find-repos/issues/1
