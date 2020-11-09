@@ -4,8 +4,9 @@ title: About
 order: 2
 ---
 
-I am Andrew Crozier, a data engineer at [Faculty] (previously known as ASI Data
-Science). acroz is my usual online handle.
+I am Andrew Crozier, a software engineer specialising in machine learning
+systems at [Faculty] (previously known as ASI Data Science). acroz is my usual
+online handle.
 
 * [Curriculum Vitae][CV]
 * [LinkedIn]
@@ -21,9 +22,9 @@ electromechanics as a research and diagnostic tool in the treatment of heart
 failure. Following my PhD, I continued in this field of research as a postdoc
 with [Gernot Plank] at the [Medical University of Graz][MUG], Austria.
 
-As an enthusiastic user of Python and Linux, this website records some of the
-tasks and challenges I have worked on, and showcases some of the software I
-have written and made publicly available.
+As an enthusiastic user of Python, Scala and Linux, this website records some
+of the tasks and challenges I have worked on, and showcases some of the
+software I have written and made publicly available.
 
 ## Contact
 

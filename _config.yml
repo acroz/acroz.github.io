@@ -9,7 +9,7 @@ permalink: /:year/:month/:day/:title/
 title: acroz
 tagline: 'Andrew Crozier'
 description: >
-  Blog of Andrew Crozier, a data engineer based in London.
+  Blog of Andrew Crozier, a software engineer based in London.
 url: http://acroz.github.io
 baseurl: ""
 date_format: "%-d %B, %Y"
